@@ -1,8 +1,10 @@
 export interface Kitty {
+  id:string;
   name: string;
   size: string;
   age: string;
   vaccine: boolean;
+  levelActivity: string;
 }
 
 export function getKitty(id: string) {
