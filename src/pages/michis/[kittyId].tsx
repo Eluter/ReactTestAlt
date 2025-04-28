@@ -14,7 +14,7 @@ import {
 } from "~/components/ui/select";
 import { Skeleton } from "~/components/ui/skeleton";
 import { useToast } from "~/hooks/use-toast";
-import { getKitty, type Kitty, saveKitty } from "~/mock/api";
+import { getKitty, type Kitty, saveKitty } from "~/client/api";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
