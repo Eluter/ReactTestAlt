@@ -56,10 +56,10 @@ export default function SimpleExample() {
 
   const [savingForm, setSavingForm] = useState(false);
   const [savingFormError, setSavingFormError] = useState("");
+
   const [verifyOpen, setVerifyOpen] = useState(false);
   const [verificationCode, setVerificationCode] = useState("");
   const [verificationCodeError, setVerificationCodeError] = useState("");
-  const { toast } = useToast();
 
   async function onSubmit() {
     try {
@@ -80,6 +80,7 @@ export default function SimpleExample() {
     setVerifyOpen(true);
   }
 
+  const { toast } = useToast();
   async function saveForm() {
     setSavingForm(true);
     try {
@@ -141,7 +142,7 @@ export default function SimpleExample() {
                     onChange={(e) =>
                       setFormData((d) => ({ ...d, name: e.target.value }))
                     }
-                  ></Input>
+                  />
                 </div>
                 <div>
                   <Label>Tamaño</Label>
@@ -163,7 +164,6 @@ export default function SimpleExample() {
                 </div>
                 <div>
                   <Label htmlFor="age">Edad</Label>
-
                   <Input
                     name="age"
                     type="number"
