@@ -21,7 +21,7 @@ export function getKitty(id: string) {
 export function saveKitty(id: string, kitty: Kitty, code?: string) {
   return new Promise<void>((resolve, reject) => {
     setTimeout(() => {
-      if (code === "123456") {
+      if (code === "141516") {
         localStorage.setItem(`kitties:${id}`, JSON.stringify(kitty));
         resolve();
       } else {
