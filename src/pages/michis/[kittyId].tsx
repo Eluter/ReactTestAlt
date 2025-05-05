@@ -114,9 +114,9 @@ export default function SimpleExample() {
                           <SelectValue placeholder="" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="light">Enorme</SelectItem>
-                          <SelectItem value="dark">Normal</SelectItem>
-                          <SelectItem value="system">Chiquito</SelectItem>
+                          <SelectItem value="big">Enorme</SelectItem>
+                          <SelectItem value="mid">Normal</SelectItem>
+                          <SelectItem value="small">Chiquito</SelectItem>
                         </SelectContent>
                       </Select>
                     )}
